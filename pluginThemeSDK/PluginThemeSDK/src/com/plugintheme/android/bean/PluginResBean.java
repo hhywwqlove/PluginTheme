@@ -1,6 +1,7 @@
 package com.plugintheme.android.bean;
 
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 
 public class PluginResBean {
 
@@ -28,11 +29,11 @@ public class PluginResBean {
 		
 	}
 	
-	public int getDrawable(String drawableName){
+	public Drawable getDrawable(String drawableName){
 		
 		int id=res.getIdentifier(drawableName, "drawable", plugPkg);
 		 
-		 return res.getColor(id);
+		 return res.getDrawable(id);
 	}
 	
 	

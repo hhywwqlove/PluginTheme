@@ -48,7 +48,8 @@ public class MainActivity extends ThemeActivity  implements OnClickListener{
 	@Override
 	public void onUpdate(PluginResBean resBean) {
 		// TODO Auto-generated method stub
-      btn.setBackgroundColor(resBean.getColor("buttonColor"));
+//      btn.setBackground(resBean.getDrawable("ic_launcher"));
+		btn.setBackgroundDrawable(resBean.getDrawable("ic_launcher"));
 	}
 
 }
